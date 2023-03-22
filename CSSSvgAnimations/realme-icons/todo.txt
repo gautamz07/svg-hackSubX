@@ -1,0 +1,2 @@
+- [inkscape] - How to make a svg round edged.
+- [inkscape] - how to make lines with an angle for the torch lines svg. 

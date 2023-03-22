@@ -1,0 +1,32 @@
+.circle__outer {
+  opacity:1;
+  fill:none;
+  fill-opacity:1;
+  stroke:#00d4aa;
+  stroke-width:0.5;
+  stroke-linecap:round;
+  stroke-linejoin:miter;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:69px;
+  stroke-dashoffset:69px;
+  animation: stroke 1s forwards;
+}
+
+.circle__tick {
+  fill:none;
+  stroke:#00d4aa;
+  stroke-width:0.3;
+  stroke-miterlimit:4;
+  stroke-dasharray:none;
+  stroke-opacity:1;
+  stroke-dasharray:39px;
+  stroke-dashoffset:39px;
+  animation: stroke 3s 1s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

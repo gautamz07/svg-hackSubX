@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    body {
+        background: #eee;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+      height: 30vh;
+      background: #ddd;
+      width: 400px;
+      width: 30vh;
+      position: relative;
+      border-radius: 50%;
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .wrapper {
+      max-width:200px;
+      max-height: 200px;
+    }
+
+    .wifi-stroke1, .wifi-stroke2, .wifi-stroke3, .wifi-dot {
+      animation-name: wifiStroke;
+      /* animation-fill-mode: forwards; */
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-direction: alternate;
+    }
+
+    .wifi-stroke1 {
+      animation-delay: 4s;
+    }
+
+    .wifi-stroke2 {
+      animation-delay: 3s;
+    }
+
+    .wifi-stroke3 {
+      animation-delay: 2s;
+    }
+
+    .wifi-dot {
+      animation-delay: 1s;
+    }
+
+    @keyframes wifiStroke {
+      0% {
+        fill: none;
+      }
+      100% {
+        fill: red;
+      }
+    }
+
+    #backline {
+      animation-name: backlineAnimation;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      /* stroke-dasharray:79.375 0; */
+      /* stroke-dasharray:19.84px; */
+      stroke-dasharray:39.69px;
+      stroke-dashoffset: 10px;
+      /* stroke-dashoffset: 39.69px; */
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    /* @keyframes backlineAnimation {
+      0% {
+        stroke-dasharray: 0 79.37px;
+        stroke-dashoffset: -39.69px;
+      }
+      100% {
+        stroke-dasharray: 79.37px 0;
+        stroke-dashoffset: 0px;
+      }
+    } */
+    </style>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 48.136105 79.598999"
+   version="1.1"
+   id="bluetoothIconSvg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="bluethood-break-apart-icon.svg">
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.604957,-76.75465)"
+     >
+    <path
+       style="fill:none;
+       stroke:#000000;
+       stroke-width:1px;
+       stroke-linecap:butt;
+       stroke-linejoin:miter;
+       stroke-opacity:1"
+       d="M 49.924165,76.866652 V 156.24165"
+       id="backline"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
+</div>
+
+
+</div>
+
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+   <script src='js/anime.min.js'></script>
+   <script src='js/bluetooth.js'></script>
+
+</body>
+</html>
